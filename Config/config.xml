@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config xmlns="http://thelia.net/schema/dic/config"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://thelia.net/schema/dic/config http://thelia.net/schema/dic/config/thelia-1.0.xsd">
+
+    <commands>
+        <command class="TheliaSession\Command\TheliaSessionConfigurationCommand" />
+        <command class="TheliaSession\Command\TheliaSessionClearCommand" />
+    </commands>
+
+    <services>
+        <service id="thelia_session.session_listener" class="TheliaSession\EventListener\SessionListener">
+            <tag name="kernel.event_subscriber"/>
+        </service>
+        <service id="thelia_session.thelia_session_listener" class="TheliaSession\EventListener\TheliaSessionListener">
+            <tag name="kernel.event_subscriber"/>
+        </service>
+    </services>
+</config>
