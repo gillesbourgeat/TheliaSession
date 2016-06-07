@@ -20,15 +20,15 @@ composer require thelia/thelia-session-module:~0.1
 
 ## Usage
 
-### Command configuration
+### Command : session config
 
-#### Example for Memcached
+* Example for Memcached
 
 ```bach
 php Thelia session:config --handler=memcached --host=127.0.0.1 --port=11211
 ```
 
-### Command session clear
+### Command : session clear
 
 ```bach
 php Thelia session:clear
