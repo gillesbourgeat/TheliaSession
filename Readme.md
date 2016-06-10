@@ -1,6 +1,6 @@
 # Thelia Session
 
-This module allows to change the session storing of Thelia.
+This module allows to change the session storage of Thelia.
 - [x] Memcached
 
 ## Installation
